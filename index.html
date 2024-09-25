@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    background-color: #ece5dd;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+
+}
+.chat-container {
+    width: 400px;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    position: relative;
+    overflow: none;
+    scrollbar-width:none;
+}
+.chat-header {
+    background-color: #075e54;
+    color: #fff;
+    padding: 10px;
+    text-align:left ;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.chat-body {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+.info{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.call{
+    position: absolute;
+    right: 0;
+}
+.v{
+    width: 30px;
+    height: 30px;
+    margin-left: 90px;
+    border-radius: 50%;
+}
+.vi{
+    width: 30px;
+    height: 30px;
+    margin-left:5px;
+    border-radius:50%;   
+}
+.menu{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 50%;
+
+}
+.name{
+    font-size: 25px;
+    margin-left: 10px;
+    display: inline-block;
+    color:lightpink;
+}
+.profile{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.date{
+    background-color: #d3d3d3;
+    color:rgb(79, 32, 32);
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    margin-left: 150px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+.msg {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.right {
+    background-color: rgb(237, 220, 220);
+    align-self: flex-start;
+}
+
+.left {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+}
+
+.footer {
+    display: flex;
+    padding: 20px;
+    background-color: rgb(91, 144, 144);
+    border-top: 1px solid rgb(240, 235, 235);
+    position: fixed;
+    bottom: 0;
+    width: 360px;
+    max-width: 100%;
+}
+
+.footer input {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    outline: none;
+}
+</style>
+</head>
+<body>
+    <div class="chat-container">     
+        <div class="chat-header">
+            <div class="info">
+            <img src="/day7/images/annaya_i_love_wallpaper.jpg" alt="profile" class="profile">
+            <div class="name"> Annayya</div>
+            <div class="calls">
+            <img src="/day7/images/voice call svg.png" alt="voice" class="v"> 
+            <img src="/day7/images/video call svg.png" alt="video" class="vi">
+            <img src="/day7/images/menu svg.png" alt="menu" class="menu">
+        </div>
+        </div>
+    </div>
+        <div class="chat-body">
+            <span class="date">30 july</span>
+            <span class="msg right">Hi</span>
+            <span class="msg right">Hello</span>
+            <span class="msg right">Amechesthavvu</span>
+            <span class="msg left">Hi Annayya</span>
+            <span class="msg left">kalli nee Annaya</span>
+            <span class="msg right">Duty loo maa</span>
+            <span class="msg left">Ha</span>
+            <span class="msg right">Avnna vuriki vasthunna </span>
+            <span class="msg right">Tommorow</span>
+            <span class="msg left">Ha Annayya</span>
+            <span class="msg right">Ame tesukonni ravali maa</span>
+            <span class="msg left">Ame vadhu Annaya</span>
+            <span class="msg right">Yem Ayyindi Maa</span>
+            <span class="msg left">Ame kaledhu Annaya</span>
+            <span class="msg right">Ayyayyo</span>
+            <span class="msg left">Ha</span>
+            <span class="msg left">chappu inka</span>
+            <span class="msg left">Annaya</span>
+            <span class="msg left">repu vasthunnavvu kadha challu inka naa happiness full</span>
+            <span class="msg right">Haa sure Maa</span>
+            <span class="msg right">Bayatiki podhammu baga enjoy chasthammu</span>
+            <span class="msg left">Ok Annaya</span>
+            <span class="msg left">Tinnava Annaya</span>
+            <span class="msg right">Ha Maa</span>
+            <span class="msg right">Just now</span>
+            <span class="msg right">U Maa</span>
+            <span class="msg left">Haa Annaya</span>
+            <span class="date">31 july</span>
+            <span class="msg right">Hii Maa</span>
+            <span class="msg right">Yem Chestunnav</span>
+            <span class="msg right">How are you</span>
+            <span class="msg left">Hi Annaya</span>
+            <span class="msg left">Fine</span>
+            <span class="msg left">U Annaya</span>
+            <span class="msg left">phone chusthuna</span>
+            <span class="msg left">Yem Chesthunav Annayya</span>
+            <span class="msg right">Same</span>
+            <span class="msg right">Amma vallu yalla vunnaru maa</span>
+            <span class="msg left">andharu baga vunnaru Annayya</span>
+            <span class="msg left">U Annayya</span>
+            <span class="msg right">Ha Maa</span>
+            <span class="msg right">Nee studies yalla vunnayyi maa</span>
+            <span class="msg left">Bagga vunnayyi Annayya</span>
+            <span class="msg left">Yakkadha vunnavvu Annayya</span>
+            <span class="msg right">Duty loo vunna maa</span>
+            <span class="msg left">Sare bye Annayya evening chastha malli</span>
+        </div>
+    </div>
+</body>
+</html>
+
